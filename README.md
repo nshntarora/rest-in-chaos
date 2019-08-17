@@ -8,3 +8,29 @@
 ```
 
 ### Add unreliability to any HTTP service
+
+## Installation
+
+Run the below command
+
+```
+go get -u github.com/nshntarora/rest-in-chaos
+```
+
+The binary will now be available in the `bin` directory in your `GOPATH`
+
+## Usage
+
+```
+rest-in-chaos <<YOUR URL>>
+```
+
+The server will be running on the port **24267**
+
+## Example
+
+```
+rest-in-chaos http://localhost:3000
+```
+
+Any request to localhost:24267 will be proxied to localhost:3000, with the exception of some requests chosen at random.
