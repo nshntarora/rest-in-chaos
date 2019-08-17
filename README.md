@@ -9,9 +9,17 @@
 
 ### Add unreliability to any HTTP service
 
+## Why?
+
+I mostly do frontend at work, and I've always ignored building error states. Error states are a second class citizen in building UIs. One of the reasons is the developers building it don't get error states often from their APIs. What if we change that?
+
+## How?
+
+rest-in-chaos is a command line utility that spawns proxy server, a really shitty one at that. Every request made to the rest-in-chaos server is either proxied to the passed URL, or returns an error response. It's completely random. It's chaos.
+
 ## Installation
 
-Run the below command
+Run the following command
 
 ```
 go get -u github.com/nshntarora/rest-in-chaos
